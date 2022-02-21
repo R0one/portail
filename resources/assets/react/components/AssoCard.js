@@ -9,11 +9,11 @@
  * */
 
 import React from 'react';
-import bdeImage from '../../images/bde.jpg';
+import mdeImage from '../../images/mde.svg';
 
 const AssoCard = ({ image, login, name, shortname, additionalInfo, inCemetary }) => {
 	const style = {
-		backgroundImage: `url('${!image ? bdeImage : image}')`,
+		backgroundImage: `url('${!image ? mdeImage : image}')`,
 		backgroundSize: 'contain',
 		backgroundRepeat: 'no-repeat',
 	};
