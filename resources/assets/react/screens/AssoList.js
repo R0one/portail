@@ -109,7 +109,7 @@ class AssoListScreen extends React.Component {
 								key={asso.id}
 								name={asso.name}
 								shortname={asso.shortname}
-								image={asso.image}
+								image={asso.image ? asso.image : asso.parent.image }
 								login={asso.parent ? asso.parent.login : asso.login}
 								inCemetary={asso.in_cemetery_at != null}
 							/>
